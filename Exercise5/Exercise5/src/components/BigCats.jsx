@@ -114,6 +114,8 @@ export default function BigCats() {
 
   const handleFullList = () => {
     let newList = cats;
+    console.log("catList", catList);
+    console.log("newList", newList);
     setCatList(newList);
   };
 

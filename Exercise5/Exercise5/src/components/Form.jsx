@@ -12,7 +12,7 @@ export default function Form({ catData, catList, setCatData, setCatList }) {
   };
 
   const handleImageChange = (e) => {
-    setCatData({ ...catData, image: `${e.target.value}` });
+    setCatData({ ...catData, image: e.target.value });
   };
 
   // • Submitting the form should update the parent BigCats

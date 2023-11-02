@@ -14,7 +14,7 @@ export default function Emoji() {
     <div>
       <div className="Emoji">{emoji}</div>
       <button onClick={handleClick} className="change-mood-btn">
-        Change Moode
+        Change Mood
       </button>
     </div>
   );

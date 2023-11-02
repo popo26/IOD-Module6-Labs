@@ -55,13 +55,12 @@ export default function BigCats() {
       image={cat.image}
       name={cat.name}
       latinName={cat.latinName}
-      id={cat.name}
     />
   ));
 
   // 1. Extend your BigCats component from Exercise 2 to include buttons
   // for alphabetically sorting and reversing the list
-  // A to Z
+  // *********A to Z*********
   const handleAtoZ = () => {
     let newList = [...catList];
 
@@ -81,7 +80,7 @@ export default function BigCats() {
 
   // 1. Extend your BigCats component from Exercise 2 to include buttons
   // for alphabetically sorting and reversing the list
-  // Z to A
+  // *********Z to A*********
   const handleZtoA = () => {
     let newList = [...catList];
     newList.sort((a, b) => {
@@ -98,7 +97,7 @@ export default function BigCats() {
   // 2.Add another button to filter the list and display only the
   // cats in the ‘Panthera’ family, and one to reset and show
   // the full list.
-  // Panthera family
+  // *********Panthera family*********
   const handlePanthera = () => {
     const newList = catList.filter((cat) =>
       cat.latinName.toLowerCase().includes("panthera")
@@ -109,7 +108,7 @@ export default function BigCats() {
   // 2.Add another button to filter the list and display only the
   // cats in the ‘Panthera’ family, and one to reset and show
   // the full list.
-  // Full list
+  // *********Full list*********
   const handleFullList = () => {
     let newList = cats;
     setCatList(newList);

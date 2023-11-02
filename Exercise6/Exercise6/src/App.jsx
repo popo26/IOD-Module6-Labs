@@ -31,11 +31,11 @@ function App() {
     } else if (operator == "-") {
       result = num1Float - num2Float;
     } else if (operator == "/") {
-      result = num1Float / num2Float;
+      result = num2Float == 0 ? num1Float : num1Float / num2Float;
     } else if (operator == "*") {
       result = num1Float * num2Float;
     } else if (operator == "%") {
-      result = num1Float % num2Float;
+      result = num2Float == 0 ? 0 : num1Float % num2Float;
     } else {
       result = "Available operators are +, -, *, /, %. That's all.";
     }

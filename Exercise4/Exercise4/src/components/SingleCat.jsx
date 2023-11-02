@@ -1,4 +1,4 @@
-export default function SingleCat({ name, latinName, image, id }) {
+export default function SingleCat({ name, latinName, image }) {
   return (
     <>
       <div id={name} className="SingleCat">

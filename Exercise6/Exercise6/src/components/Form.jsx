@@ -10,13 +10,11 @@ export default function Form({
 }) {
   const handleChange = (e) => {
     value = e.target.value;
-    if (name == "num1") {
-      onChangeNum1(value);
-    } else if (name == "num2") {
-      onChangeNum2(value);
-    } else {
-      onChangeOperator(value);
-    }
+    name == "num1"
+      ? onChangeNum1(value)
+      : name == "num2"
+      ? onChangeNum2(value)
+      : onChangeOperator(value);
   };
 
   return (
