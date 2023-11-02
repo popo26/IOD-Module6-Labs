@@ -51,21 +51,30 @@
   background-color: pink;
   color: yellow;
   padding: 20px;
-  margin:20px;
+  margin: 20px;
 }
 
-.SingleCat img{
-  width:200px;
+.SingleCat img {
+  width: 200px;
   object-fit: contain;
 }
 
-.a-to-z-btn{
-background-color: greenyellow;
-margin-right:20px;
+.a-to-z-btn {
+  background-color: greenyellow;
+  margin-right: 20px;
 }
 
-.z-to-a-btn{
+.z-to-a-btn {
   background-color: yellowgreen;
+}
+
+.panthera {
+  background-color: goldenrod;
+  margin-right: 20px;
 
 }
 
+.full-list {
+  background-color: black;
+  color: white;
+}
