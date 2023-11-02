@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family:cursive;
 }
 
 .logo {
@@ -39,4 +40,20 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.Form-input {
+  height:50px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.calculate-btn{
+  background-color:black;
+  color:white;
+  margin:20px;
+}
+
+.result {
+  font-size:40px;
 }

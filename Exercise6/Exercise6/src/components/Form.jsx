@@ -1,13 +1,42 @@
-export default function Form({name, htmlFor, type, title, onNum1}){
-
-    const handleChange =(e) => {
-
-        onNum1(e.target.value);
+export default function Form({
+  name,
+  htmlFor,
+  type,
+  title,
+  value,
+  onChangeNum1,
+  onChangeNum2,
+  onChangeOperator,
+}) {
+  const handleChange = (e) => {
+    value = e.target.value;
+    if (name == "num1") {
+      onChangeNum1(value);
+    } else if (name == "num2") {
+      onChangeNum2(value);
+    } else {
+      onChangeOperator(value);
     }
-    return (
-        <>
-            <label htmlFor={htmlFor}>{title}: </label>
-            <input name={name} type={type} onClick={handleChange}></input>
-        </>
-    )
+  };
+
+  return (
+    <>
+      <div>
+        <div>
+          <label htmlFor={htmlFor}>{title}: </label>
+        </div>
+        <div>
+          <input
+            name={name}
+            htmlFor={htmlFor}
+            type={type}
+            title={title}
+            value={value}
+            onChange={handleChange}
+            className="Form-input"
+          />
+        </div>
+      </div>
+    </>
+  );
 }
